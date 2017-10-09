@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 { 
+        setlocale(LC_ALL, "RUSSIAN");
 	double a, b;
 	double sum, razn, pr, del;
 	cout << "Введите первое число: ";
