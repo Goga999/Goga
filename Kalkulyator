@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{ 
+	double a, b;
+	double sum, razn, pr, del;
+	cout << "Введите первое число: ";
+	cin >> a;
+	cout << "Введите второе число: ";
+	cin >> b;
+
+	sum = a + b;
+	razn = a - b;
+	pr = a*b;
+	del = a / b;
+
+	cout << "Сумма: ";
+	cout << sum << endl;
+	cout << "Разность: ";
+	cout << razn << endl;
+	cout << "Произведение: ";
+	cout << pr << endl;
+	cout << "Частное: ";
+	cout << del << endl;
+	system("pause");
+ 
+	return 0;
+}
