@@ -1,0 +1,71 @@
+#include "stdafx.h"
+#include<iostream>
+
+
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN"); //включить русский язык в консоле 
+
+	double x, y;
+	bool work;
+
+	int exit = 1;
+	work = true;
+	
+
+		cout << "enter x=";
+		cin >> x;
+		cout << "enter y=";
+		cin >> y;
+
+			//поясняю  знаки операций
+			cout << " if x*y enter *" << endl;
+			cout << " if x/y enter /" << endl;
+			cout << " if x+y enter +" << endl;
+			cout << " if x-y enter -" << endl;
+			
+		char op;
+		cin >> op;
+
+		double k;
+		bool ok = true;
+
+		switch (op)
+		{
+		case '*':
+			k = x*y;
+			break;
+		case '-':
+			k = x - y;
+			break;
+		case '+':
+			k = x + y;
+			break;
+		case '/':
+			if (y == 0)
+			{
+				cout << "error" << endl;
+				system("pause");
+			}
+			else
+				k = x / y;
+			break;
+		default:
+			ok = false;
+			break;
+		}
+		if (ok == true)
+		{
+			cout << "Ответ: ";
+			cout << k << endl;
+			system("pause");
+		}
+		else
+		{
+			cout << "k was not founded" << endl;
+			system("pause");
+		}
+				
+	return 0;
+}
