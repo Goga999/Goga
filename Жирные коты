@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN");
+	double a, b;
+	cout << "Введите вес первого кота: ";
+	cin >> a;
+	cout << "Введите вес второго кота: ";
+	cin >> b;
+
+	if (a > 5) {
+		cout << "У первого кота ожирение!" << endl;
+	}
+	else if (b>5) {
+		cout << "У второго кота ожирение!" << endl;
+	} 
+	else if ((a > 5) && (b > 5)) {
+		cout << "У обоих котов ожирение!" << endl;
+	}
+	else {
+		cout << "Коты здоровы!)" << endl;
+	}
+	system("pause"); 
+    return 0;
+}
