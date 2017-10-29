@@ -1,4 +1,27 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
 
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN");
+	double a, b;
+	cout << "Привет! Это настроение Гуся Васи. Если гусь доволен, введите 1, если не доволен, введите 2." << endl;
+	cin >> a;
+
+	if (a == 1) {
+		cout << "Гусь доволен!" << endl;
+	}
+	else if (a == 2) {
+		cout << "Гусь не доволен!" << endl;
+	} 
+	else {
+		cout << "Вася без настроения.( " << endl;
+	}
+
+	system("pause"); 
+    return 0;
+}
 #include <iostream>
 using namespace std;
 
