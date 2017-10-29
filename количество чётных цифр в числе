@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN");
+	int a, a1, b, i, j, k;
+	double p;
+	p = 0;
+	k = 0;
+	i = 1;
+
+	cout << "Введите натуральное число: ";
+	cin >> a;
+	a1 = a;
+
+	while ((a1 / 10) != 0)
+	{
+		i = i + 1;
+		a1 = a1 / 10;
+	}
+
+	cout << "Количество цифр: ";
+	cout << i << endl;
+
+	for (j = 1; j <= i; j++)
+	{
+		if ((a % 2) == 0) {
+			k = k + 1;
+		}
+		a = a / 10;
+	}
+
+	cout << "Количество чётных цифр: ";
+	cout << k << endl;
+	
+	system("pause"); 
+    return 0;
+}
