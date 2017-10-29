@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN");
+	int a, b, i, j;
+	double p;
+	p = 0;
+	cout << "Введите число, до которого быдет происходить суммирование ";
+	cin >> a;
+
+	for (i = 1; i <= a; i++) {
+		p = p + i;
+	}
+	cout << "Сумма от 1 до ";
+	cout << a;
+	cout << " равна: " << endl;
+	cout << p << endl;
+	system("pause"); 
+    return 0;
+}
