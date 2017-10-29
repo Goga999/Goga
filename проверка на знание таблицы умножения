@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream> 
+using namespace std;
+ 
+int main()
+{
+ 
+    char ch;
+    short int a,b,i;
+    cout << "Введите число" << endl;
+    cin >> a;
+    cout << " второе число:"<<endl;
+    cin >> b;
+    cout << " результат:"<<endl;
+    cin >> itog;
+    if (itog == a*b){
+        cout << "Правильно!";
+    }
+    else cout << "Нет! Правильный ответ: >> " << a*b;
+    return 0;
+ 
+}
