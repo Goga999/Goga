@@ -1,0 +1,134 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN");
+	int a, b;
+
+	cout << "Хочешь узнать совместимость со своей второй половинкой?" << endl;
+	cout << "Вводи номер своего знака зодиака!" << endl;
+	cout << "1 - Овен" << endl;
+	cout << "2 - Телец" << endl;
+	cout << "3 - Близнецы" << endl;
+	cout << "4 - Рак" << endl;
+	cout << "5 - Лев" << endl;
+
+	cin >> a;
+
+	cout << "Dводи номер знака зодиака своей второй половинки!" << endl;
+	cout << "1 - Овен" << endl;
+	cout << "2 - Близнецы" << endl;
+	cout << "3 - Дева" << endl;
+	cout << "4 - Стрелец" << endl;
+	cout << "5 - Лев" << endl;
+	cin >> b;
+
+	if ((a == 1) && (b == 1))
+	{
+		cout << "1%" << endl;
+	}
+	else if ((a == 1) && (b == 2))
+	{
+		cout << "3%" << endl;
+	}
+	else if ((a == 1) && (b == 3))
+	{
+		cout << "6%" << endl;
+	}
+	else if ((a == 1) && (b == 4))
+	{
+		cout << "9%" << endl;
+	}
+	else if ((a == 1) && (b == 5))
+	{
+		cout << "12%" << endl;
+	}
+
+	else if ((a == 2) && (b == 2))
+	{
+		cout << "24%" << endl;
+	}
+	else if ((a == 2) && (b == 3))
+	{
+		cout << "27%" << endl;
+	}
+	else if ((a == 2) && (b == 4))
+	{
+		cout << "30%" << endl;
+	}
+	else if ((a == 2) && (b == 1))
+	{
+		cout << "3%" << endl;
+	}
+	else if ((a == 2) && (b == 5))
+	{
+		cout << "15%" << endl;
+	}
+
+	else if ((a == 3) && (b == 1))
+	{
+		cout << "6%" << endl;
+	}
+	else if ((a == 3) && (b == 2))
+	{
+		cout << "27%" << endl;
+	}
+	else if ((a == 3) && (b == 3))
+	{
+		cout << "51%" << endl;
+	}
+	else if ((a == 3) && (b == 4))
+	{
+		cout << "54%" << endl;
+	}
+	else if ((a == 3) && (b == 5))
+	{
+		cout << "34%" << endl;
+	}
+
+	else if ((a == 4) && (b == 1))
+	{
+		cout << "9%" << endl;
+	}
+	else if ((a == 4) && (b == 2))
+	{
+		cout << "30%" << endl;
+	}
+	else if ((a == 4) && (b == 3))
+	{
+		cout << "54%" << endl;
+	}
+	else if ((a == 4) && (b == 4))
+	{
+		cout << "69%" << endl;
+	}
+	else if ((a == 4) && (b == 5))
+	{
+		cout << "75%" << endl;
+	}
+	
+	else if ((a == 5) && (b == 1))
+	{
+		cout << "22%" << endl;
+	}
+	else if ((a == 5) && (b == 2))
+	{
+		cout << "45%" << endl;
+	}
+	else if ((a == 5) && (b == 3))
+	{
+		cout << "58%" << endl;
+	}
+	else if ((a == 5) && (b == 4))
+	{
+		cout << "18%" << endl;
+	}
+	else if ((a == 5) && (b == 5))
+	{
+		cout << "33%" << endl;
+	}
+	system("pause");
+	return 0;
+}
