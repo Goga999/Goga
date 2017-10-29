@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN");
+	double a, b;
+	cout << "Если гусь доволен, введите 5, если не доволен, введите 10." << endl;
+	cin >> a;
+  if (a == 5) {
+		cout << "Гусь доволен!" << endl;
+	}
+  
+	else if (a == 10) {
+		cout << "Гусь не доволен!" << endl;
+	} 
+	else {
+		cout << "Гусь без настроения.( " << endl;
+	}
+
+	system("pause"); 
+    return 0;
+}
